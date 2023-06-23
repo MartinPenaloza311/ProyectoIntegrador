@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+:root {
+    --background: rgb(0, 0, 0, 1);
+    --headercolor : rgb(41, 39, 39);
+    --letterfont : #ededed;
+    --backgroundletter: #00abf0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: DM SANS;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(/assets/photo-1534796636912-3b95b3ab5986.jfif);
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--backgroundletter);
+    border-radius: 1rem;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--letterfont);
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid var(--backgroundletter);
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: var(--letterfont);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: var(--letterfont);
+}
+
+.inputbox i {
+    position: absolute;
+    right: 8px;
+    color: var(--letterfont);
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: var(--letterfont);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.forget label input{
+    margin-right: 3px;
+}
+
+.forget label a {
+    color: var(--letterfont);
+    text-decoration: none;
+    
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: var(--letterfont);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+button:hover {
+    background: url(/assets/photo-1534796636912-3b95b3ab5986.jfif);
+    color: var(--backgroundletter);
+    border: 1px solid var(--backgroundletter);
+}
+
+.register {
+    font-size: .9em;
+    color: var(--letterfont);
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: var(--letterfont);
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: url(/assets/photo-1534796636912-3b95b3ab5986.jfif);
+    color: var(--letterfont);
+    font-family: DM SANS;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content h3:hover {
+    color: var(--backgroundletter);
+    cursor: pointer;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 15px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: var(--letterfont);
+}
+
+.socials a i {
+    font-size: 1.5rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: var(--backgroundletter);
+}
+
+.footer-bottom {
+    background: url(/assets/photo-1534796636912-3b95b3ab5986.jfif);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    font-weight: 200;
+    color: var(--backgroundletter);
+}
+
+
+@media (max-width:280px) {
+    .form-box {
+        width: 100%;
+    }
+}

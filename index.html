@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/animaciones.css">
+    <link rel="stylesheet" href="/assets/mediaqueries.css">
+    <title>Proyecto Integrador</title>
+</head>
+<body>
+    <header>
+        <a href="#hero"><img src="./assets/Logo.png" alt="logo gimnasio" class="logo"></a>
+        <!-- Navbar -->
+        <nav class="navbar">
+
+            <label for="menu-toggle" class="menu-label">
+                <img src="/assets/menu.png" alt="menu">
+            </label>
+
+            <input type="checkbox" id="menu-toggle">
+
+            <ul class="navbar-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#discover">Descubre</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/login.html" target="_blank">Login</a></li>
+            </ul>
+
+
+            <div class="overlay"></div>
+        </nav>
+    </header>
+
+<main>
+<!-- Hero -->
+<section id="hero">
+            <div class="hero-info">
+                <h1>NITRO <span>GYM</span></h1>
+                <p>Descubre tu mejor version, cumple tus objetivos y <span>entrenate con nosotros</span></p>
+                <div class="btn-box">
+                    <a href="#contacto">Entrena Con Nosotros</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <img src="/assets/hombre-fuerte-entrenando-gimnasio_1303-23478.avif" alt="">
+                <div class="hero-card-info">
+                    <div class="hero-card-top">
+                        <h3>✔️ TU MEJOR VERSION
+                            <br>
+                            ✔️ MEJORES RUTINAS
+                        </h3>
+                    </div>
+            </div>
+            </div>
+</section>
+
+<section id="discover">
+    <div class="discover-info">
+        <h2>Transforma tu cuerpo y mente</h2>
+        <div class="discover-text">
+                <p>Descubre nuestros Servicios, En Nitro Gym, contamos con las maquinas indicadas para que puedas sacar el 100%. Ademas contamos con un sector de boxeo para que puedas entrenar. 
+                En El segundo piso encontrarás +20 Maquinas para correr y ejercitar tu resistencia.
+                Contamos con una pileta Olimpica en donde podes empezar tus clases de natacion.
+                </p>
+            <div class="btn-box">
+                <a href="http://127.0.0.1:5500/pages/login.html">Anotate Ya!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+    <br>
+    <br>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/assets/recepcion gym.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Sobre Nosotros</h2>
+            <br>
+            <h3>En Nitro Gym, creemos que el ejercicio físico no solo es importante para mantener un cuerpo fuerte, sino también para fomentar la salud mental y emocional.</h3>
+            <p>En Nitro Gym, nos enorgullece ofrecer un espacio inspirador y motivador donde   puedes alcanzar tus metas de fitness y bienestar.
+            </p>
+            <p>Nuestras instalaciones modernas y bien equipadas están diseñadas para brindarte un ambiente acogedor y agradable donde te sientas cómodo/a y motivado/a para entrenar.
+            Ofrecemos una amplia gama de clases y programas de entrenamiento, desde sesiones de cardio de alta intensidad y entrenamiento de fuerza hasta clases de yoga y pilates para mejorar la flexibilidad y la relajación. Además, contamos con entrenamientos personalizados para adaptarnos a tus necesidades individuales y maximizar tus resultados.</p>
+            <div class="btn-box">
+                <a href="http://127.0.0.1:5500/pages/login.html">Leer Más</a>
+            </div>
+        </div>
+</section>
+
+<section id="contacto">
+<div class="contact-us">
+    <h1 class="logo-contact">Contactate con <span>Nosotros</span></h1>
+
+    <div class="contact-wrapper">
+        <div class="contact-form">
+            <h3>Contacto</h3>
+            <form action="form">
+                <p>
+                    <label for="fullname">Nombre Completo</label>
+                    <input type="text" name="fullname" id="fullname">
+                </p>
+                <p>
+                    <label>Correo</label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label>Numero de Telefono</label>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label>Asunto</label>
+                    <input type="text" name="affair">
+                </p>
+                <p class="block">
+                    <label> Mensaje</label>
+                    <textarea name="message" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button type="submit">Enviar</button>
+                </p>
+                
+                
+            </form>
+        </div>
+        <div class="contact-info">
+            <h3>Mas Información</h3>
+            <ul>
+                <li><i class='bx bxs-map'></i>Av. Lionel Messi 181222</li>
+                <li><i class='bx bx-envelope'></i>NitroGym@gmail.com</li>
+                <li><i class='bx bxs-phone'></i>11-18122231</li>
+            </ul>
+            <p>No importa tu nivel de condición física o experiencia previa, estamos aquí para ayudarte a alcanzar tus metas. Si estás listo/a para comenzar tu viaje hacia una vida más saludable y activa, ¡te invitamos a unirte a Nitro Gym! Contáctanos hoy mismo para obtener más información y programar una visita. ¡Estamos emocionados de conocerte y ayudarte a lograr tus objetivos de fitness!</p>
+            <p>Nitrogym.com.ar</p>
+        </div>
+    </div>
+</section>
+    </main>
+
+        <footer>
+            <div class="footer-content">
+            <h3>Nitro Gym</h3>    
+            <p>Pagina creada ficticia, solamente para uso personal, unicamente para ser evaludada por Nucba.</p>
+            <ul class="socials">
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+            </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy;2023 NitroGym. Hecho por <span>Martin Peñaloza</span></p>
+            </div>
+        </footer>
+</body>
+</html>
